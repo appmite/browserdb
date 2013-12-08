@@ -1,0 +1,22 @@
+{
+  "name": "browserdb",
+  "version": "0.0.1",
+  "homepage": "https://github.com/appmite/browserdb.git",
+  "authors": [
+    "Srirangan"
+  ],
+  "description": "Simple IndexedDb tool like MongoDb",
+  "main": "browserdb.js",
+  "keywords": [
+    "indexeddb",
+    "browserdb"
+  ],
+  "license": "Unlicense",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
