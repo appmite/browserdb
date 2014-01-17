@@ -1,6 +1,6 @@
-(function (options, callback) {
+//(function () {
 
-  //window.BrowserDb = function (options, callback) {
+  var BrowserDb = module.exports = function (options, callback) {
 
     var verifyCollections = function (callback) {
 
@@ -248,6 +248,6 @@
       });
     };
 
-  //};
+  };
 
-}).call(this);
+//}).call(this);
