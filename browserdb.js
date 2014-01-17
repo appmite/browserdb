@@ -1,6 +1,6 @@
-(function () {
+(function (options, callback) {
 
-  window.BrowserDb = function (options, callback) {
+  //window.BrowserDb = function (options, callback) {
 
     var verifyCollections = function (callback) {
 
@@ -226,10 +226,10 @@
       if (typeof callback === "function") callback(undefined, browserDbInstance);
     };
 
-    window.indexedDB = window.indexedDB || window.webkitIndexedDB || window.mozIndexedDB || window.msIndexedDB;
+    //window.indexedDB = window.indexedDB || window.webkitIndexedDB || window.mozIndexedDB || window.msIndexedDB;
 
     var db;
-    var openDbRequest = window.indexedDB.open(options.db);
+    var openDbRequest = window.indexedDB.open(options.db, options.version);
 
     openDbRequest.onerror = function (event) {
     };
@@ -248,6 +248,6 @@
       });
     };
 
-  };
+  //};
 
 })();
