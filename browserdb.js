@@ -229,7 +229,7 @@
     window.indexedDB = window.indexedDB || window.webkitIndexedDB || window.mozIndexedDB || window.msIndexedDB;
 
     var db;
-    var openDbRequest = window.indexedDB.open(options.db, options.version);
+    var openDbRequest = window.indexedDB.open(options.db);
 
     openDbRequest.onerror = function (event) {
     };
